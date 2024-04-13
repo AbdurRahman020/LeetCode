@@ -3,7 +3,7 @@ class MyQueue:
     def __init__(self):
         self.stack1 = []
         self.stack2 = []
-        
+
     def push(self, x: int) -> None:
         while self.stack1:
             self.stack2.append(self.stack1.pop())
@@ -19,7 +19,6 @@ class MyQueue:
 
     def empty(self) -> bool:
         return not self.stack1
-
 
 if __name__ == '__main__':
     myQueue = MyQueue()
