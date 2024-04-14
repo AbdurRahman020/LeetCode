@@ -23,11 +23,9 @@ class Solution(object):
 
 if __name__ == '__main__':
     s = Solution()
-    
     r1 = TreeNode(1, TreeNode(2, None, TreeNode(5)), TreeNode(3))
     r2 = TreeNode(1)
     r3 = None
-    
     print(s.binaryTreePaths(r1))
     print(s.binaryTreePaths(r2))
     print(s.binaryTreePaths(r3))

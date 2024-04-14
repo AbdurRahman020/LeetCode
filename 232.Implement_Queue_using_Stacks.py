@@ -22,11 +22,9 @@ class MyQueue:
 
 if __name__ == '__main__':
     myQueue = MyQueue()
-
     myQueue.push(1)
     myQueue.push(2)
     myQueue.push(3)
-
     print('peek:', myQueue.peek())
     print('pop:', myQueue.pop())
     print('pop:', myQueue.pop())

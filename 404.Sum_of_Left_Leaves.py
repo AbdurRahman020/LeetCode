@@ -16,9 +16,7 @@ class Solution:
 
 if __name__ == '__main__':
     s = Solution()
-    
     r1 = TreeNode(3, TreeNode(9), TreeNode(20, TreeNode(15), TreeNode(7)))
     r2 = TreeNode(1)
-    
     print(s.sumOfLeftLeaves(r1))
     print(s.sumOfLeftLeaves(r2))

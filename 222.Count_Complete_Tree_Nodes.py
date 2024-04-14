@@ -13,13 +13,9 @@ class Solution(object):
         
 if __name__ == '__main__':
     s = Solution()
-    
     r1 = None
-    r2 = TreeNode(1, TreeNode(2, TreeNode(4), TreeNode(5)), \
-                  TreeNode(3, TreeNode(6)))
+    r2 = TreeNode(1, TreeNode(2, TreeNode(4), TreeNode(5)), TreeNode(3, TreeNode(6)))
     r3 = TreeNode(1)
-    
     print(s.countNodes(r1))
     print(s.countNodes(r2))
     print(s.countNodes(r3))
-    

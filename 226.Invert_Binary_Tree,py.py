@@ -17,12 +17,9 @@ class Solution(object):
 
 if __name__ == '__main__':
     s = Solution()
-    
     r1 = TreeNode(2, TreeNode(1), TreeNode(3))
-    r2 = TreeNode(4, TreeNode(2, TreeNode(1), TreeNode(3)), \
-                  TreeNode(7, TreeNode(6), TreeNode(9)))
+    r2 = TreeNode(4, TreeNode(2, TreeNode(1), TreeNode(3)), TreeNode(7, TreeNode(6), TreeNode(9)))
     r3 = None
-    
     print(s.invertTree(r1))
     print(s.invertTree(r2))
     print(s.invertTree(r3))
