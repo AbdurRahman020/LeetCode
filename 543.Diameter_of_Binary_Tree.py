@@ -13,7 +13,7 @@ class Solution:
             left, right = dfs(root.left), dfs(root.right)
             self.diameter_max = max(self.diameter_max, left + right)
             return 1 + max(left, right)
-    
+        
         dfs(root)
         return self.diameter_max
 
