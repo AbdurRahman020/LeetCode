@@ -38,6 +38,6 @@ class Solution:
 if __name__ == '__main__':
     s = Solution()
     r1 = TreeNode(1, TreeNode(2))
-    r2 = TreeNode(1 , TreeNode(2, None, TreeNode(4)), TreeNode(3))
+    r2 = TreeNode(1, TreeNode(2, None, TreeNode(4)), TreeNode(3))
     print(s.printTree(r1))
     print(s.printTree(r2))
