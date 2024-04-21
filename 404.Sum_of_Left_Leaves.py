@@ -5,13 +5,14 @@ class TreeNode(object):
         self.right = right
 
 class Solution:
-    def sumOfLeftLeaves(self, root:TreeNode) -> int:
+    def sumOfLeftLeaves(self, root: TreeNode) -> int:
         def dfs(root:TreeNode, Left:bool) -> int:
             if not root:
                 return 0
             if not root.left and not root.right and Left:
                 return root.val
             return dfs(root.left, True) + dfs(root.right, False)
+        
         return dfs(root, False)
 
 if __name__ == '__main__':

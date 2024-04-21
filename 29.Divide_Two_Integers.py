@@ -1,5 +1,5 @@
 class Solution(object):
-    def divide(self, dividend:int, divisor:int) -> int:
+    def divide(self, dividend: int, divisor: int) -> int:
         if dividend == 0:
             return 0
         if divisor == 0:

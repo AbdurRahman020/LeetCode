@@ -5,7 +5,7 @@ class TreeNode(object):
         self.right = right
 
 class Solution:
-    def addOneRow(self, root:TreeNode, val:int, depth:int) -> TreeNode:
+    def addOneRow(self, root: TreeNode, val: int, depth: int) -> TreeNode:
         if depth == 1:
             return TreeNode(val, root, None)
 
@@ -21,6 +21,7 @@ class Solution:
                 dfs(root.right, lvl)
         
         dfs(root, depth)
+        
         return root
     
 if __name__ == '__main__':

@@ -5,7 +5,7 @@ class TreeNode(object):
         self.right = right
 
 class Solution:
-    def preorderTraversal(self, root:TreeNode) -> list[int]:
+    def preorderTraversal(self, root: TreeNode) -> list[int]:
         result = []
         def PreOrder(root):
             if root != None:

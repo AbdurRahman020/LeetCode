@@ -1,9 +1,9 @@
 class Solution:
-    def islandPerimeter(self, grid:list[list[int]]) -> int:
+    def islandPerimeter(self, grid: list[list[int]]) -> int:
         rows, cols = len(grid), len(grid[0])
         perimeter = 0
 
-        def dfs(r,c):
+        def dfs(r, c):
             if r < 0 or r >= rows or c < 0 or c >= cols or grid[r][c] == 0:
                 return 1
             if grid[r][c] == -1:

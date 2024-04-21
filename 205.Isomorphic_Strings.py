@@ -1,5 +1,5 @@
 class Solution(object):
-    def isIsomorphic(self, s:str, t:str) -> bool:
+    def isIsomorphic(self, s: str, t: str) -> bool:
         if len(s) != len(t):
             return RuntimeError("Error, string must be of equal length.")
         maping_st, maping_ts = {}, {}

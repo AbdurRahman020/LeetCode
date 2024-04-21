@@ -5,7 +5,7 @@ class TreeNode(object):
         self.right = right
 
 class Solution:
-    def sumNumbers(self, root:TreeNode) -> int:
+    def sumNumbers(self, root: TreeNode) -> int:
         def dfs(root, path):
             if not root:
                 return 0

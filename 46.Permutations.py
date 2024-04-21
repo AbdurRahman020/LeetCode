@@ -6,7 +6,7 @@ class Solution:
                 result.append(curr_per)
                 return
             for i in range(len(nums)):
-                backtrack(nums[:i]+nums[i+1:], [nums[i]] + curr_per)
+                backtrack(nums[:i] + nums[i+1:], [nums[i]] + curr_per)
        
         backtrack(nums, [])
         return result

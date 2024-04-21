@@ -7,7 +7,7 @@ class TreeNode(object):
         self.right = right
 
 class Solution:
-    def isEvenOddTree(self, root:TreeNode) -> bool:
+    def isEvenOddTree(self, root: TreeNode) -> bool:
         if not root:
             return True
         
@@ -35,6 +35,7 @@ class Solution:
                     queue.append(root.right)
             
             level += 1
+            
         return True
 
 if __name__ == '__main__':

@@ -1,9 +1,11 @@
 class Solution(object):
-    def canMakeArithmeticProgression(self, arr:list[int]) -> bool:
+    def canMakeArithmeticProgression(self, arr: list[int]) -> bool:
         arr.sort()
+        
         for i in range(1,len(arr)-1):
             if arr[i+1]-arr[i] != arr[i]-arr[i-1]:
                 return False
+            
         return True
 
 if __name__ == '__main__':

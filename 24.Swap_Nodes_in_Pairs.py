@@ -4,7 +4,7 @@ class ListNode:
         self.next = next
         
 class Solution:
-    def swapPairs(self, head:ListNode) -> ListNode:
+    def swapPairs(self, head: ListNode) -> ListNode:
         if not head or not head.next:
             return head
         

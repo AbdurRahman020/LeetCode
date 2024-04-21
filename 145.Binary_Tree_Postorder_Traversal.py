@@ -5,7 +5,7 @@ class TreeNode(object):
         self.right = right
 
 class Solution:
-    def postorderTraversal(self, root:TreeNode) -> list[int]:
+    def postorderTraversal(self, root: TreeNode) -> list[int]:
         result = []
         def PostOrder(root):
             if root != None:

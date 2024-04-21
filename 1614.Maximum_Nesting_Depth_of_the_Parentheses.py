@@ -1,5 +1,5 @@
 class Solution(object):
-    def maxDepth(self, s:str) -> int:
+    def maxDepth(self, s: str) -> int:
         depth = 0
         opened = 0
         

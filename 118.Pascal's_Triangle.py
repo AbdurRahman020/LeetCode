@@ -1,5 +1,5 @@
 class Solution:
-    def generate(self, numRows:int) -> list[list[int]]:
+    def generate(self, numRows: int) -> list[list[int]]:
         pascal_triangle = []
         for i in range(numRows):
             rows = [0]*(i+1)

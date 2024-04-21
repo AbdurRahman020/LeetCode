@@ -1,5 +1,5 @@
 class Solution(object):
-    def isValid(self, s:str) -> bool:
+    def isValid(self, s: str) -> bool:
         stack = []
         pairs = {'[':']', '{':'}', '(':')'}
         for brackets in s:

@@ -5,7 +5,7 @@ class TreeNode(object):
         self.right = right
         
 class Solution:
-    def findBottomLeftValue(self, root:TreeNode) -> int:
+    def findBottomLeftValue(self, root: TreeNode) -> int:
         def dfs(root, depth):
             if not root:
                 return 0, 0

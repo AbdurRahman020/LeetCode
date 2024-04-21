@@ -5,13 +5,13 @@ class TreeNode(object):
         self.right = right
 
 class Solution:
-    def smallestFromLeaf(self, root:TreeNode) -> str:
+    def smallestFromLeaf(self, root: TreeNode) -> str:
         result = []
         def dfs(root, val):
             if not root:
                 return False
             
-            val += chr(ord('a')+ root.val)
+            val += chr(ord('a') + root.val)
             left = dfs(root.left, val)
             right = dfs(root.right, val)
 
@@ -21,6 +21,7 @@ class Solution:
         
         dfs(root, '')
         result.sort()
+        
         return result[0]
 
 if __name__ == '__main__':

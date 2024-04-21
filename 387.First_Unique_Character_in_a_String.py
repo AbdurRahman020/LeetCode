@@ -1,5 +1,5 @@
 class Solution:
-    def firstUniqChar(self, s:str) -> int:
+    def firstUniqChar(self, s: str) -> int:
         return min([s.index(ch) for ch in set(s) if s.count(ch) == 1] or [-1])
 
 if __name__ == '__main__':

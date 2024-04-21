@@ -1,9 +1,10 @@
 from collections import Counter
 
 class Solution(object):
-    def maxFrequencyElements(self, nums:list[int]) -> int:
+    def maxFrequencyElements(self, nums: list[int]) -> int:
         x = Counter(nums)
         max_frq = -1
+        
         for i in x:
             max_frq = max(max_frq, x[i])
             
@@ -11,6 +12,7 @@ class Solution(object):
         for i in x:
             if x[i] == max_frq:
                 sum += x[i]
+        
         return sum
     
 if __name__ == '__main__':

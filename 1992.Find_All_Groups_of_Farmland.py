@@ -1,5 +1,5 @@
 class Solution:
-    def findFarmland(self, land:list[list[int]]) -> list[list[int]]:
+    def findFarmland(self, land: list[list[int]]) -> list[list[int]]:
         row_length, col_length = len(land), len(land[0])
         coordinates = []
         visited = set()

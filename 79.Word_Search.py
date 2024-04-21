@@ -1,5 +1,5 @@
 class Solution(object):
-    def exist(self, board:list[list[str]], word:str) -> bool:
+    def exist(self, board: list[list[str]], word: str) -> bool:
         row_length, col_length = len(board), len(board[0])
         
         def dfs(r, c, current):

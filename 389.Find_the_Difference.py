@@ -1,10 +1,11 @@
 class Solution(object):
-    def findTheDifference(self, s:str, t:str) -> str:
+    def findTheDifference(self, s: str, t: str) -> str:
         string = 0
         for c in t:
             string += ord(c)
         for c in s:
-            string -= ord(c)           
+            string -= ord(c)
+            
         return chr(string)
     
 if __name__ == '__main__':

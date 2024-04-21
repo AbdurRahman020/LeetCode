@@ -5,7 +5,7 @@ class TreeNode(object):
         self.right = right
 
 class Solution:
-    def isSameTree(self, p:TreeNode, q:TreeNode) -> bool:
+    def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
         if not p and not q:
             return True
         if not p or not q:

@@ -5,7 +5,7 @@ class TreeNode(object):
         self.right = right
         
 class Solution:
-    def maxAncestorDiff(self, root:TreeNode) -> int:
+    def maxAncestorDiff(self, root: TreeNode) -> int:
         def dfs(root, min_val, max_val):
             if not root:
                 return max_val - min_val

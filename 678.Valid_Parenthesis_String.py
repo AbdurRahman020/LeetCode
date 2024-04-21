@@ -1,6 +1,7 @@
 class Solution:
     def checkValidString(self, s: str) -> bool:
         bracket, star = [], []
+        
         for i in range(len(s)):
             if s[i] == '(':
                 bracket.append(i)
@@ -17,6 +18,7 @@ class Solution:
         while bracket and star:
             if bracket.pop() > star.pop():
                 return False
+            
         return not bracket
 
 if __name__ == '__main__':

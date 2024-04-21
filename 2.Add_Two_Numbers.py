@@ -4,7 +4,7 @@ class ListNode:
         self.next = next
         
 class Solution:
-    def addTwoNumbers(self, l1:ListNode, l2:ListNode) -> ListNode:
+    def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         curr = head = ListNode()
         carry = 0
 

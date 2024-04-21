@@ -1,6 +1,7 @@
 class Solution(object):
-    def arraySign(self, nums:list[int]) -> int:
+    def arraySign(self, nums: list[int]) -> int:
         neg_count = 0
+        
         for i in range(len(nums)):
             if nums[i] == 0:
                 return 0

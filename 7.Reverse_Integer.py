@@ -1,5 +1,5 @@
 class Solution(object):
-    def reverse(self, x:int) -> int:
+    def reverse(self, x: int) -> int:
         int_reversed = ''
         sign = 1
         for i in str(x):

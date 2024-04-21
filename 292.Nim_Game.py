@@ -1,5 +1,5 @@
 class Solution(object):
-    def canWinNim(self, n:int) -> bool:
+    def canWinNim(self, n: int) -> bool:
         if n % 4 == 0:
             return False
         else:

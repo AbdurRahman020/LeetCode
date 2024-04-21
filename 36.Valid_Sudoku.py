@@ -1,5 +1,5 @@
 class Solution(object):
-    def isValidSudoku(self, board: list[list[str]]) -> bool:
+    def isValidSudoku(self, board:list[list[str]]) -> bool:
         for row in board:
             num = []
             for col in row:

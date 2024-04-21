@@ -1,6 +1,7 @@
 class Solution:
     def tictactoe(self, moves: list[list[int]]) -> str:
         a, b = [0]*8, [0]*8
+        
         for i in range(len(moves)):
             row, col = moves[i]
             if i%2 == 0:

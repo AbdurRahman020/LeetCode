@@ -4,7 +4,7 @@ class MyQueue:
         self.stack1 = []
         self.stack2 = []
 
-    def push(self, x:int) -> None:
+    def push(self, x: int) -> None:
         while self.stack1:
             self.stack2.append(self.stack1.pop())
         self.stack2.append(x)

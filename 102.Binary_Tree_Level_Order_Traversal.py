@@ -7,7 +7,7 @@ class TreeNode(object):
         self.right = right
 
 class Solution:
-    def levelOrder(self, root:TreeNode) -> list[list[int]]:
+    def levelOrder(self, root: TreeNode) -> list[list[int]]:
         result = []
         q = deque()
         q.append(root)
@@ -23,6 +23,7 @@ class Solution:
 
             if level:
                 result.append(level)
+                
         return result
 
 if __name__ == '__main__':

@@ -5,7 +5,7 @@ class TreeNode(object):
         self.right = right
         
 class Solution(object):
-    def countNodes(self, root:TreeNode) -> int:
+    def countNodes(self, root: TreeNode) -> int:
         if root == None:
             return 0
         else:

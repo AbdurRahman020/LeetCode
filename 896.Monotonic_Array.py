@@ -1,7 +1,8 @@
 class Solution:
     def isMonotonic(self, nums: list[int]) -> bool:
-        increase = all(nums[i] <= nums[i + 1] for i in range(len(nums) - 1))
-        decrease = all(nums[i] >= nums[i + 1] for i in range(len(nums) - 1))
+        n = len(nums)
+        increase = all(nums[i] <= nums[i + 1] for i in range(n - 1))
+        decrease = all(nums[i] >= nums[i + 1] for i in range(n - 1))
         return increase or decrease 
     
        # method#2

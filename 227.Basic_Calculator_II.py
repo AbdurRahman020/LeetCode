@@ -1,8 +1,9 @@
 import math
 
 class Solution:
-    def calculate(self, s:str) -> int:
+    def calculate(self, s: str) -> int:
         stack, num, sign = [], 0, '+'
+        
         for ch in s + '+':
             if ch.isdigit():
                 num = 10*num + int(ch)
@@ -17,6 +18,7 @@ class Solution:
                     stack.append(math.trunc(stack.pop()/num))
                 sign = ch
                 num = 0
+                
         return sum(stack)
 
 if __name__ == '__main__':

@@ -5,7 +5,7 @@ class TreeNode(object):
         self.right = right
 
 class Solution:
-    def printTree(self, root:TreeNode) -> list[list[str]]:
+    def printTree(self, root: TreeNode) -> list[list[str]]:
         def dfs(node, count):
             if not node:
                 return count

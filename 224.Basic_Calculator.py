@@ -1,5 +1,5 @@
 class Solution:
-    def calculate(self, s:str) -> int:
+    def calculate(self, s: str) -> int:
         result, curr, sign, stack = 0, 0, 1, []
         for ch in s:
             if ch.isdigit():

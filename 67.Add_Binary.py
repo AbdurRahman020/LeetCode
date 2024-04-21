@@ -1,5 +1,5 @@
 class Solution:
-    def addBinary(self, a:str, b:str) -> str:
+    def addBinary(self, a: str, b: str) -> str:
         result, total, i, j = [], 0, len(a)-1, len(b)-1
         while i>=0 or j>=0 or total:
             if i >= 0:
