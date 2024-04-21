@@ -1,6 +1,7 @@
 class Solution(object):
     def findTheDifference(self, s: str, t: str) -> str:
         string = 0
+        
         for c in t:
             string += ord(c)
         for c in s:

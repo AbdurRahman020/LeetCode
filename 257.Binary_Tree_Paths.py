@@ -7,6 +7,7 @@ class TreeNode(object):
 class Solution(object):
     def binaryTreePaths(self, root: TreeNode) -> list[str]:
         result = []
+        
         def dfs(root, path):
             if root == None:
                 return []

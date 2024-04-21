@@ -1,6 +1,7 @@
 class Solution:
     def calculate(self, s: str) -> int:
         result, curr, sign, stack = 0, 0, 1, []
+        
         for ch in s:
             if ch.isdigit():
                 curr = int(ch)
@@ -18,6 +19,7 @@ class Solution:
                 result *= stack.pop()
                 result += stack.pop()
                 curr = 0
+                
         return result + sign*curr
 
 if __name__ == '__main__':

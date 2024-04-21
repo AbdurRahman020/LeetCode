@@ -2,6 +2,7 @@ class Solution(object):
     def isValid(self, s: str) -> bool:
         stack = []
         pairs = {'[':']', '{':'}', '(':')'}
+        
         for brackets in s:
             if brackets in pairs:
                 stack.append(brackets)

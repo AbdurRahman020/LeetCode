@@ -1,10 +1,10 @@
 class Solution:
     def islandPerimeter(self, grid: list[list[int]]) -> int:
-        rows, cols = len(grid), len(grid[0])
+        row_length, col_length = len(grid), len(grid[0])
         perimeter = 0
 
         def dfs(r, c):
-            if r < 0 or r >= rows or c < 0 or c >= cols or grid[r][c] == 0:
+            if r < 0 or r >= row_length or c < 0 or c >= col_length or grid[r][c] == 0:
                 return 1
             if grid[r][c] == -1:
                 return 0
@@ -18,8 +18,8 @@ class Solution:
 
             return perimeter
         
-        for i in range(rows):
-            for j in range(cols):
+        for i in range(row_length):
+            for j in range(col_length):
                 if grid[i][j] == 1:
                     perimeter += dfs(i,j)
         

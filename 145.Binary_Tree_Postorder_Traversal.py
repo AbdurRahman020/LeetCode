@@ -18,11 +18,9 @@ class Solution:
 
 if __name__ == '__main__':
     s = Solution()
-    
     r1 = TreeNode(1, None, TreeNode(2, TreeNode(3)))
     r2 = TreeNode(1)
     r3 = None
-    
     print(s.postorderTraversal(r1))
     print(s.postorderTraversal(r2))
     print(s.postorderTraversal(r3))
