@@ -1,13 +1,15 @@
 class Solution(object):
     def findMedianSortedArrays(self, nums1: list[int], nums2: list[int]) -> float:
         num = nums1 + nums2
+        n = len(num)
         num.sort()
-        if len(num)%2 != 0:
-            return num[len(num)//2]
+        
+        if n%2 != 0:
+            return num[n//2]
         else:
-            m1 = num[(len(num)-1)//2]
-            m2 = num[(len(num)-1)//2 + 1]
-            return (float(m1)+float(m2))/2
+            m1 = num[(n-1)//2]
+            m2 = num[(n-1)//2 + 1]
+            return (float(m1) + float(m2))/2
 
 if __name__ == '__main__':
     s = Solution()

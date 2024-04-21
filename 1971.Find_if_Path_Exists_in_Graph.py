@@ -13,10 +13,12 @@ class Solution:
         def dfs(node):
             if node == destination:
                 return True
+            
             visited_node.add(node)
             for path_next in graph[node]:
                 if path_next not in visited_node and dfs(path_next):
                     return True
+                
             return False
         
         return dfs(source)
