@@ -18,3 +18,25 @@ public:
     }
 };
 
+int main() {
+    Solution l;
+    std::vector<int> result1 = l.twoSum({2, 7, 11, 15}, 9);
+    for (int num : result1) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
+
+    std::vector<int> result2 = l.twoSum({3, 2, 4}, 6);
+    for (int num : result2) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
+
+    std::vector<int> result3 = l.twoSum({-1, -2, -3, -4, -5}, -8);
+    for (int num : result3) {
+        std::cout << num << " ";
+    }
+    std::cout << std::endl;
+
+    return 0;
+}
