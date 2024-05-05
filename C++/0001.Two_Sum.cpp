@@ -4,17 +4,25 @@
 
 class Solution {
 public:
+    // function to find indices of two numbers in the array that add up to the target
     std::vector<int> twoSum(const std::vector<int>& nums, int target) {
+        // map to store checked numbers and their indices
         std::unordered_map<int, int> checked;
+        // size of the input vector
         int n = nums.size();
         for (int i = 0; i < n; i++) {
+            // calculate the difference needed to reach the targe
             int diff = target - nums[i];
+            // if the difference is found in the map
             if (checked.find(diff) != checked.end()) {
+                // return the indices of the two numbers that sum up to the target
                 return {checked[diff], i};
             } else {
+                // store the current number and its index in the map
                 checked[nums[i]] = i;
             }
         }
+        // if no solution is found, return an empty vector
         return {};
     }
 };
